@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Concorra a uma conta grátis!">
+    <meta property="og:description" content="Faça seu cadastro e seja um dos 50 BETA TESTERS da MIDIA CLUB - Inteligência artificial aplicada ao seu Instagram. Seu Instagram de forma inteligente como você nunca viu.">
+    <title>50 Free|MIDIA CLUB</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="animated flash"><span>ATENÇÃO:</span> SOMENTE <span>50</span> VAGAS DISPONÍVEIS</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <h2>Estamos selecionando <span>50 perfis do instagram</span> para terem <br/> acesso ao programa <span>beta tester</span> da</h2>
+                </div>
+                <div class="col-xl-12 txt-cnt">
+                    <img src="/img/MIDIA CLUB logo.png" alt="MIDIA CLUB APP logo">
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6">
+                    <h2>Quais os benefícios da Midia Club?</h2>
+                    <i class="fas fa-check-circle">
+                        <h3>Inteligência Articifial gerenciando seu Instagram</h3>
+                    </i>
+                    <i class="fas fa-check-circle">
+                        <h3>Agendamento de postagens</h3>
+                    </i>
+                    <i class="fas fa-check-circle">
+                        <h3>Visualizador de Stories no Automático</h3>
+                    </i>
+                    <i class="fas fa-check-circle">
+                        <h3>Gerador de Conteúdo para o Instagram</h3>
+                    </i>
+                    <i class="fas fa-check-circle">
+                        <h3>Segmentação por perfil, hashtag e Localização</h3>
+                    </i>
+                    <i class="fas fa-check-circle">
+                        <h3>Mensagens Automáticas pelo Direct</h3>
+                    </i>
+                    <i class="fas fa-check-circle">
+                        <h3>Relatório e métricas dos seus resultados</h3>
+                    </i>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="col-12 col-sm-12 col-md-6">
+                    <h2>Quais os benefícios que eu vou ter?</h2>
+                    <i class="fas fa-check-circle">
+                        <h3>Conta Premium</h3>
+                    </i>
+                    <i class="fas fa-check-circle">
+                        <h3>Acesso a todas as funções da plataforma</h3>
+                    </i>
+                    <i class="fas fa-check-circle">
+                        <h3>3 meses de acesso totalmente <span>GRATUITO</span></h3>
+                    </i>
+                    <i class="fas fa-check-circle">
+                        <h3>Atualizações de novas funções</h3>
+                    </i>
+                    <i class="fas fa-check-circle">
+                        <h3>Suporte Exclusivo</h3>
+                    </i>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row animated fadeInUp">
+                <img id="painel" src="/img/platform.png" alt="Imagem da interface do painel MIDIA CLUB">
+            </div>
+        </div>
+
+        <button type="submit" class="animated flipInY baixar">QUERO CONCORRER A UMA DAS VAGAS</button>
+        <h4>Copyright 2019 - Midia Club - Todos os direitos reservados</h4>
+    </main>
+
+    <!-- Modal Cadastro -->
+    <div class="modal-container" id="modal-ebook">
+        <div class="container" id="modal">
+            <div class="errorValid">
+                <p id="paragrafo"></p>
+            </div>
+            <button class="close">X</button>
+            <h1 class="text-center">Cadastre-se aqui!</h1>
+            <p class="mb-3 text-center">Basta preencher o formulário.</p>
+            <form id="form-contato" class="text-left"  method="POST" action="./email.php" onSubmit="return validaForm(this);">
+                <div class="form-group"> 
+                    <label for="form16">Nome</label> 
+                    <input type="text" class="form-control" id="nome" name="name" placeholder="Seu nome completo">
+                    <span class='msg-erro msg-nome'></span> 
+                </div>
+                <div class="form-group"> 
+                    <label for="form18">E-mail</label> 
+                    <input class="form-control" type="text" name="email" id="email"  placeholder="seuemail@email.com"> 
+                    <span class='msg-erro msg-email'></span>
+                </div>
+                <div class="form-group"> 
+                    <label for="form19">Telefone (opcional)</label> 
+                    <input class="form-control" type="text" name="telefone" id="telefone"  placeholder="Número com Whatsapp"> 
+                    <span class='msg-erro msg-email'></span>
+                </div>
+
+                <div class="form-group"> 
+                    <label for="form20">Seu Instagram</label> 
+                    <input class="form-control" type="text" name="message" id="instagram"  placeholder="Seu @usuário"> 
+                    <span class='msg-erro msg-email'></span>
+                </div>
+                <div class="form-group"> 
+                    <label for="form17">Você é?</label> 
+                    <select class="form-control" id="form17">
+                    <option value="">Selecione</option>
+                    <option value="Iniciante">Iniciante</option>
+                    <option value="Pessoal">Pessoal</option>
+                    <option value="Dono do seu próprio negócio">Dono do seu próprio negócio</option>
+                    <option value="Profissional da área de marketing">Profissional da área de marketing</option>                
+                    <option value="Outros">Outros</option>
+                    </select>
+                </div>
+                <div class="form-group"></div>
+                <button type="submit" class="btn text-white text-center modal-button" value="<?php if(isset($_POST['lestname'])) { echo $_POST['email'];}?>" class="space" 
+name="confirmemail" id='confirmemail'>Enviar</button>
+            </form> 
+        </div>
+    </div>
+
+    <!-- Modal Thank You -->
+    <!-- <div class="modal-container" id="modal-thanks">
+        <div class="container" id="modal">
+            <button class="close">X</button>
+            <h1>Obrigado!</h1>
+            <p class="mb-3">Agradecemos pelo interesse no <br> "Midia Club"!</p>
+            <p> Em alguns instantes você receberá um email.</p>
+        </div>
+    </div> -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Script modal -->
+  <script src="js/modal.js"></script>
+
+</body>
+</html>
